@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>cppstyle</title>
+    <link href="/2024/01/21/cppstyle/"/>
+    <url>/2024/01/21/cppstyle/</url>
+    
+    <content type="html"><![CDATA[<h1 id="my-self-ccpp-code-style.">My self C/Cpp code style.</h1><h2 id="pointer">Pointer</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-type">int</span> *ptr1, *ptr2, *ptr3, ...;<span class="hljs-comment">//*贴近变量名，且定义与初始化不同行。</span><br>ptr1 = &amp;num1;<br>...<br></code></pre></td></tr></table></figure><h2 id="reference">Reference</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-type">float</span> &amp;ref1 = obj1;<br><span class="hljs-type">int</span> &amp;ref2 = obj2, &amp;ref3 = obj3;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>C</tag>
+      
+      <tag>C++</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>unreal1</title>
+    <link href="/2024/01/20/unreal1/"/>
+    <url>/2024/01/20/unreal1/</url>
+    
+    <content type="html"><![CDATA[<h1 id="unreal5新建项目编译错误">Unreal5新建项目编译错误</h1><p>妈的怎么又好了......</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>三角换元</title>
+    <link href="/2024/01/18/math2/"/>
+    <url>/2024/01/18/math2/</url>
+    
+    <content type="html"><![CDATA[<p>参考：</p><p>    《普林斯顿微积分读本》</p><h1 id="微分">微分</h1><p>我们知道<span class="math inline">\(f&#39;(x)=\frac{dy}{dx}\)</span>，其中<span class="math inline">\(f&#39;(x)\)</span>表示函数<span class="math inline">\(f(x)\)</span>对<span class="math inline">\(x\)</span>的导数</p><p><span class="math inline">\(dy,dx\)</span>分别表示非常小的<span class="math inline">\(y\)</span>和<span class="math inline">\(x\)</span></p><p>等式两侧同乘<span class="math inline">\(dx\)</span>得到：<span class="math inline">\(dy=dxf&#39;(x)\)</span>，此时得到的<span class="math inline">\(dy\)</span>称为<span class="math inline">\(y\)</span>的微分.</p><h1 id="对等式两侧求微分">对等式两侧求微分</h1><p>现在尝试求<span class="math inline">\(\int{}arcsinxdx\)</span>：</p><p>我们应该使用分部积分法，<span class="math inline">\(\int{udv}=uv-\int{}vdu\)</span></p><p>这里令<span class="math inline">\(u=arcsinx\)</span>，<span class="math inline">\(dv=dx\)</span>，显然<span class="math inline">\(v=x\)</span></p><p>因为<span class="math inline">\(\frac{d(arcsinx)}{dx}=\frac{1}{\sqrt{1-x^2}}\)</span>，所以<span class="math inline">\(d(arcsinx)=\frac{dx}{\sqrt{1-x^2}}\)</span></p><p>现在我们有</p><p><span class="math inline">\(u=arcsinx\)</span>        <span class="math inline">\(v=x\)</span></p><p><span class="math inline">\(du=\frac{dx}{\sqrt{1-x^2}}\)</span> <span class="math inline">\(dv=dx\)</span></p><p>所以：</p><p><span class="math inline">\(\int{}arcsinxdx=xarcsinx-\int{}\frac{xdx}{\sqrt{1-x^2}}\)</span></p><p>这里我们遇到了<span class="math inline">\(\int{}\frac{xdx}{\sqrt{1-x^2}}\)</span>，使用三角换元（<span class="math inline">\(\sqrt{a^2-x^2}类型\)</span>）：</p><p>令<span class="math inline">\(x=asin(\theta)\)</span>,这里<span class="math inline">\(a=1，x=sin(\theta)\)</span>，</p><p>原式可以写为<span class="math inline">\(1-sin^2(\theta)\)</span>，即<span class="math inline">\(cos^2(\theta)\)</span></p><p>代入原积分后也要把积分变成对<span class="math inline">\(\theta\)</span>的积分：</p><p>    因<span class="math inline">\(\frac{dx}{d\theta}=\frac{d(sin(\theta)}{d\theta}=cos(\theta)\)</span></p><p>    故<span class="math inline">\(dx=d\thetacos(\theta)\)</span> </p><p>    原积分可写为：<span class="math inline">\(\int{}\frac{sin(\theta)}{cos(\theta)}d\thetacos(\theta)\)</span> 即<span class="math inline">\(\int{}sin(\theta)d\theta\)</span> ，即<span class="math inline">\(-cos(\theta)\)</span></p><p>现在我们需要将<span class="math inline">\(\theta换回x，因为x=sin(\theta),\)</span></p><p>所以<span class="math inline">\(sin(\theta)=\frac{x}{1}\)</span>，现在我们可以把它放在一个三角形中：</p><p><img src="/2024/01/18/math2/2024-01-18-22-45-55-image.png"></p><p>很容易得到：<span class="math inline">\(cos(\theta)=\sqrt{1-x^2}\)</span></p><p>所以<span class="math inline">\(\int{}-cos(\theta)d\theta\)</span>的结果为：<span class="math inline">\(-\sqrt{1-x^2}+C\)</span></p><p>所以原积分：</p><p><span class="math display">\[\int{}arcsinxdx=xarcsinx-(-\sqrt{1-x^2}+C)\newline=xarcsinx+\sqrt{1-x^2}+C\]</span></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>高等数学</tag>
+      
+      <tag>微积分</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>分部积分法</title>
+    <link href="/2024/01/18/math1/"/>
+    <url>/2024/01/18/math1/</url>
+    
+    <content type="html"><![CDATA[<h1 id="分部积分法">分部积分法</h1><p>参考：</p><p>    《普林斯顿微积分读本》</p><p>因<span class="math inline">\(\frac{duv}{dx}=v\frac{du}{dx}+u\frac{dv}{dx}\)</span>（链式法则）</p><p>所以<span class="math inline">\(v\frac{du}{dx}=\frac{duv}{dx}-u\frac{dv}{dx}\)</span></p><p>等式两边<strong>同时对<span class="math inline">\(dx\)</span>积分</strong>得到<span class="math inline">\(\int{}\)</span></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>高等数学</tag>
+      
+      <tag>微积分</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>MinecraftForge1.16.5mod开发</title>
+    <link href="/2024/01/18/forge1/"/>
+    <url>/2024/01/18/forge1/</url>
+    
+    <content type="html"><![CDATA[<h1 id="向游戏中添加新的物品">1.向游戏中添加新的物品</h1><p>参考:</p><pre><code class="hljs">https://boson.v2mcdev.com/https://z7po75kre4.k.topthink.com/@1m29n4nr67/0.qianyan.html</code></pre><p>本文<strong>不介绍</strong>开发环境的配置</p><p>IDE: IntelliJ IDEA Community Edition 2023.3.2</p><p>Minecraft Edition: 1.16.5</p><p>forgeMDK Edition: forge-1.16.5-36.2.34-mdk</p><h2 id="添加物品的第一步创建其类并extends-item类">添加物品的第一步：创建其类并extendsItem类</h2><p>要通过forge创建任何新的物品，都需要先创建类并继承minecraft的Item类</p><p>现在我想向游戏中添加樱桃，先创建一个Java类 名为cherry</p><p>然后让cherry class继承Item class <img src="/2024/01/18/forge1/image-20240118152958050.png"></p><p>接下来，在该类中写其构造方法(与类同名) <img src="/2024/01/18/forge1/image-20240118153010741.png" alt="image-20240118153010741"></p><p>Java中super()可用于引用父类(也叫做超类,这里是Item类)中的成员</p><p>Properties即"属性"，food表示该物品是食物；tab表明我要将该物品添加到哪一个创造模式物品栏中；rarity表明了该物品的稀有程度</p><h2 id="section"></h2>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>MinecraftForge</tag>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
