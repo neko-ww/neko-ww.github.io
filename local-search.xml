@@ -4,40 +4,6 @@
   
   
   <entry>
-    <title>cppstyle</title>
-    <link href="/2024/01/21/cppstyle/"/>
-    <url>/2024/01/21/cppstyle/</url>
-    
-    <content type="html"><![CDATA[<h1 id="my-self-ccpp-code-style.">My self C/Cpp code style.</h1><h2 id="pointer">Pointer</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-type">int</span> *ptr1, *ptr2, *ptr3, ...;<span class="hljs-comment">//*贴近变量名，且定义与初始化不同行。</span><br>ptr1 = &amp;num1;<br>...<br></code></pre></td></tr></table></figure><h2 id="reference">Reference</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-type">float</span> &amp;ref1 = obj1;<br><span class="hljs-type">int</span> &amp;ref2 = obj2, &amp;ref3 = obj3;<br></code></pre></td></tr></table></figure>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>C</tag>
-      
-      <tag>C++</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>unreal1</title>
-    <link href="/2024/01/20/unreal1/"/>
-    <url>/2024/01/20/unreal1/</url>
-    
-    <content type="html"><![CDATA[<h1 id="unreal5新建项目编译错误">Unreal5新建项目编译错误</h1><p>妈的怎么又好了......</p>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>三角换元</title>
     <link href="/2024/01/18/math2/"/>
     <url>/2024/01/18/math2/</url>
