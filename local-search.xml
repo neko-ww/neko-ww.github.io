@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>微分方程</title>
+    <link href="/2024/01/25/differential-equations/"/>
+    <url>/2024/01/25/differential-equations/</url>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><p>参考：</p><p>《普林斯顿微积分读本》</p><p><span class="math inline">\(y=kx+b\)</span></p><p><span class="math inline">\(kx-y+b=0\)</span></p><h1 id="常系数微分方程">常系数微分方程</h1><h2 id="一阶齐次方程">一阶齐次方程</h2><p>一阶指：方程中最高导数阶数为一阶；</p><p>齐次指：方程中每一项关于<span class="math inline">\(x\)</span>的次数都相等.<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="www.bilibili.com">[1]</span></a></sup> 如<span class="math inline">\(\frac{dy}{dx}+ay=0\)</span>，</p><p>我们有</p><p>$$ =-ay, 即=ky, dy=dx, 所以dy=dx, ln(ky)=x+C, ln(ky)=kx+C,ky=e<sup>{kx+C}=e</sup>{kx}·e<sup>C=a·e</sup>{kx}, y=b·e^{kx},最后,y=Ae^{kx},A为常数.</p><p>$$</p><p><span class="math inline">\(对于\frac{dy}{dx}-3y=0,我们有kAe^{kx}-3Ae^{kx}=0,所以k=3,解为y=Ae^{3x},A是常数.\)</span></p><p>vvvv</p><p>wadwadw</p><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>www.bilibili.com<a href="#fnref:1" rev="footnote" class="footnote-backref">↩︎</a></span></span></li></ol></div></section>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>高等数学</tag>
+      
+      <tag>微积分</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>三角换元</title>
     <link href="/2024/01/18/math2/"/>
     <url>/2024/01/18/math2/</url>
