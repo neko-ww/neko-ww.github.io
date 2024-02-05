@@ -73,7 +73,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"iromoe.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"iromoe.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -294,8 +294,8 @@ https://z7po75kre4.k.topthink.com/@1m29n4nr67/0.qianyan.html</code></pre>
 Item类</h2>
 <p>要通过forge创建任何新的物品，都需要先创建类并继承minecraft的Item类</p>
 <p>现在我想向游戏中添加樱桃，先创建一个Java类 名为cherry</p>
-<p>然后让cherry class继承Item class <img src="/2024/01/18/forge1/image-20240118152958050.png" srcset="/img/loading.gif" lazyload></p>
-<p>接下来，在该类中写其构造方法(与类同名) <img src="/2024/01/18/forge1/image-20240118153010741.png" srcset="/img/loading.gif" lazyload alt="image-20240118153010741"></p>
+<p>然后让cherry class继承Item class <img src="/2024/01/18/forge1/image-20240118152958050.png"></p>
+<p>接下来，在该类中写其构造方法(与类同名) <img src="/2024/01/18/forge1/image-20240118153010741.png" alt="image-20240118153010741"></p>
 <p>Java中super()可用于引用父类(也叫做超类,这里是Item类)中的成员</p>
 <p>Properties即"属性"，food表示该物品是食物；tab表明我要将该物品添加到哪一个创造模式物品栏中；rarity表明了该物品的稀有程度</p>
 <h2 id="section"></h2>
@@ -394,7 +394,7 @@ Item类</h2>
             
   
   
-    <article id="comments" lazyload>
+    <article id="comments">
       
     <div id="giscus" class="giscus"></div>
     <script type="text/javascript">
@@ -575,10 +575,6 @@ Item类</h2>
 
 
 
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 
