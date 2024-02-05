@@ -16,23 +16,43 @@
   <meta name="author" content="neko-ww">
   <meta name="keywords" content="">
   
-    <meta name="description" content="参考： 《普林斯顿微积分读本》 \(y&#x3D;kx+b\) \(kx-y+b&#x3D;0\) 常系数微分方程 一阶齐次方程 一阶指：方程中最高导数阶数为一阶； 齐次指：方程中每一项关于\(x\)的次数都相等. 如\(\frac{dy}{dx}+ay&#x3D;0\)， 我们有 \[ \begin{align} \frac{dy}{dx}&#x3D;-ay, \newline 即\frac{dy}{dx}&#x3D;">
+    <meta name="description" content="OS : Object Space &#x3D; Local Space &#x3D; Model Space WS : World Space CS : Clip Space VS : View Space HCS : Homogeneous Clip Space SV : system-value     MVP: Model View Projection Varying是Vertex">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微分方程">
-<meta property="og:url" content="http://iromoe.com/2024/01/25/differential-equations/index.html">
+<meta property="og:title" content="shader">
+<meta property="og:url" content="http://iromoe.com/2024/02/02/shader/index.html">
 <meta property="og:site_name" content="neko-ww">
-<meta property="og:description" content="参考： 《普林斯顿微积分读本》 \(y&#x3D;kx+b\) \(kx-y+b&#x3D;0\) 常系数微分方程 一阶齐次方程 一阶指：方程中最高导数阶数为一阶； 齐次指：方程中每一项关于\(x\)的次数都相等. 如\(\frac{dy}{dx}+ay&#x3D;0\)， 我们有 \[ \begin{align} \frac{dy}{dx}&#x3D;-ay, \newline 即\frac{dy}{dx}&#x3D;">
+<meta property="og:description" content="OS : Object Space &#x3D; Local Space &#x3D; Model Space WS : World Space CS : Clip Space VS : View Space HCS : Homogeneous Clip Space SV : system-value     MVP: Model View Projection Varying是Vertex">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-01-25T10:21:24.000Z">
-<meta property="article:modified_time" content="2024-01-25T11:58:58.235Z">
+<meta property="og:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-02-17-27-15-image.png">
+<meta property="og:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-03-11-51-05-image.png">
+<meta property="og:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-03-11-51-23-image.png">
+<meta property="og:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-03-11-51-32-image.png">
+<meta property="og:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-03-11-52-36-image.png">
+<meta property="og:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-03-12-09-21-image.png">
+<meta property="og:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-03-12-10-53-image.png">
+<meta property="og:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-03-12-16-12-image.png">
+<meta property="og:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-03-12-29-09-image.png">
+<meta property="og:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-03-12-29-45-image.png">
+<meta property="og:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-03-12-30-26-image.png">
+<meta property="og:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-03-14-07-34-image.png">
+<meta property="og:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-03-14-09-43-image.png">
+<meta property="og:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-03-14-09-52-image.png">
+<meta property="og:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-03-14-16-06-image.png">
+<meta property="og:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-03-17-25-36-image.png">
+<meta property="og:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-03-17-25-54-image.png">
+<meta property="og:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-03-17-27-06-image.png">
+<meta property="article:published_time" content="2024-02-02T09:27:01.000Z">
+<meta property="article:modified_time" content="2024-02-04T06:34:10.455Z">
 <meta property="article:author" content="neko-ww">
-<meta property="article:tag" content="高等数学">
-<meta property="article:tag" content="微积分">
+<meta property="article:tag" content="UnityShader">
+<meta property="article:tag" content="Unity">
+<meta property="article:tag" content="游戏开发">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://iromoe.com/2024/02/02/shader/02/02/shader/2024-02-02-17-27-15-image.png">
   
   
   
-  <title>微分方程 - neko-ww</title>
+  <title>shader - neko-ww</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -202,7 +222,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="微分方程"></span>
+            <span id="subtitle" data-typed-text="shader"></span>
           
         </div>
 
@@ -213,8 +233,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-01-25 18:21" pubdate>
-          2024年1月25日 晚上
+        <time datetime="2024-02-02 17:27" pubdate>
+          2024年2月2日 下午
         </time>
       </span>
     
@@ -225,7 +245,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          305 字
+          202 字
         
       </span>
     
@@ -236,7 +256,7 @@
         
         
         
-          3 分钟
+          2 分钟
         
       </span>
     
@@ -273,52 +293,58 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">微分方程</h1>
+            <h1 id="seo-header">shader</h1>
             
             
               <div class="markdown-body">
                 
-                <p>参考：</p>
-<p>《普林斯顿微积分读本》</p>
-<p><span class="math inline">\(y=kx+b\)</span></p>
-<p><span class="math inline">\(kx-y+b=0\)</span></p>
-<h1 id="常系数微分方程">常系数微分方程</h1>
-<h2 id="一阶齐次方程">一阶齐次方程</h2>
-<p>一阶指：方程中最高导数阶数为一阶；</p>
-<p>齐次指：方程中每一项关于<span class="math inline">\(x\)</span>的次数都相等.</p>
-<p>如<span class="math inline">\(\frac{dy}{dx}+ay=0\)</span>，</p>
-<p>我们有</p>
-<p><span class="math display">\[
-\begin{align}
-\frac{dy}{dx}=-ay,
-\newline 即\frac{dy}{dx}=ky,
-\newline \frac{1}{ky}dy=dx,
-\newline 所以\int{}\frac{1}{ky}dy=\int{}dx,
-\newline \frac{1}{k}ln(ky)=x+C,
-\newline ln(ky)=kx+C,
-\newline ky=e^{kx+C}=e^{kx}·e^C=a·e^{kx},
-\newline y=b·e^{kx},
-\newline 最后,y=Ae^{kx},A为常数.
-\end{align}
-\]</span></p>
-<p><span class="math inline">\(对于\frac{dy}{dx}-3y=0,我们有kAe^{kx}-3Ae^{kx}=0,所以k=3,解为y=Ae^{3x},A是常数.\)</span></p>
-<p><span class="math display">\[
-\begin{align}y&#39;&#39;-3y&#39;+2y=2xe^x
-\newline 因对于Ae^{kx},y_P=Ce^{kx},
-\newline 所以，y_P=(Ax+B)e^x,y_P&#39;=(Ax+A+B)e^x,
-\newline y_P&#39;&#39;=(Ax+2A+B)e^x
-\newline 假设右侧的2xe^x为0,得到y&#39;&#39;-3y&#39;+2y=0,
-\newline 解对应特征二次方程x^2-3x+2=0得到:
-\newline x_1=1, x_2=2
-\newline 所以y_H=Ae^x+Be^{2x}
-\newline 将y_P代入原方程：
-\newline (Ax+2A+B-3Ax-3A-3B+2Ax+2B)e^x=2xe^x
-\newline 即-Axe^x=2xe^x,A=-2,解无效
-\newline -Ae^x+Be^x+Axe^x=xe^x
-\newline A=B=1
-\newline 所以y_P=(x+1)e^x
-\end{align}
-\]</span></p>
+                <img src="/2024/02/02/shader/02/02/shader/2024-02-02-17-27-15-image.png" srcset="/img/loading.gif" lazyload class>
+<p>OS : Object Space = Local Space = Model Space<br>
+WS : World Space<br>
+CS : Clip Space<br>
+VS : View Space</p>
+<p>HCS : Homogeneous Clip Space</p>
+<p>SV : system-value</p>
+<img src="/2024/02/02/shader/02/02/shader/2024-02-03-11-51-05-image.png" srcset="/img/loading.gif" lazyload class>
+<img src="/2024/02/02/shader/02/02/shader/2024-02-03-11-51-23-image.png" srcset="/img/loading.gif" lazyload class>
+<img src="/2024/02/02/shader/02/02/shader/2024-02-03-11-51-32-image.png" srcset="/img/loading.gif" lazyload class>
+<img src="/2024/02/02/shader/02/02/shader/2024-02-03-11-52-36-image.png" srcset="/img/loading.gif" lazyload class title="https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;137780634">
+<p>MVP: Model View Projection</p>
+<p>Varying是Vertex Shader的输出, Fragment Shader的输入</p>
+<p>Attribute是由Vertex Shader使用的变量（无法由Fragment Shader使用）</p>
+<p>Uniform是可在Vertex、Fragment间共同使用的变量</p>
+<img src="/2024/02/02/shader/02/02/shader/2024-02-03-12-09-21-image.png" srcset="/img/loading.gif" lazyload class>
+<img src="/2024/02/02/shader/02/02/shader/2024-02-03-12-10-53-image.png" srcset="/img/loading.gif" lazyload class title="https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;75202676">
+<h3 id="hclip-齐次裁剪空间homogeneous-clip">Hclip :
+齐次裁剪（空间）Homogeneous Clip</h3>
+<img src="/2024/02/02/shader/02/02/shader/2024-02-03-12-16-12-image.png" srcset="/img/loading.gif" lazyload class title="樱花兔">
+<p>Homogeneous齐次</p>
+<h3 id="cull-剔除">Cull 剔除</h3>
+<img src="/2024/02/02/shader/02/02/shader/2024-02-03-12-29-09-image.png" srcset="/img/loading.gif" lazyload class>
+<h3 id="zwrite">ZWrite</h3>
+<img src="/2024/02/02/shader/02/02/shader/2024-02-03-12-29-45-image.png" srcset="/img/loading.gif" lazyload class>
+<img src="/2024/02/02/shader/02/02/shader/2024-02-03-12-30-26-image.png" srcset="/img/loading.gif" lazyload class>
+<img src="/2024/02/02/shader/02/02/shader/2024-02-03-14-07-34-image.png" srcset="/img/loading.gif" lazyload class>
+<h3 id="section"></h3>
+<img src="/2024/02/02/shader/02/02/shader/2024-02-03-14-09-43-image.png" srcset="/img/loading.gif" lazyload class>
+<img src="/2024/02/02/shader/02/02/shader/2024-02-03-14-09-52-image.png" srcset="/img/loading.gif" lazyload class>
+<h3 id="position和sv_position">Position和SV_Position</h3>
+<p>Position表示模型顶点在模型空间中的位置
+SV_Position是经过世界空间到屏幕空间变换后的顶点位置</p>
+<p>使用SV_Position表示模型顶点在屏幕空间中的位置</p>
+<img src="/2024/02/02/shader/02/02/shader/2024-02-03-14-16-06-image.png" srcset="/img/loading.gif" lazyload class>
+<h3 id="vertex函数">vertex函数</h3>
+<p>模型的模型空间中的顶点坐标转换为剪裁空间的坐标</p>
+<h3 id="fragment函数">fragment函数</h3>
+<p>片元也可作像素</p>
+<p>该函数返回模型对应的屏幕上每个像素的颜色值</p>
+<h3 id="逐像素逐顶点半兰伯特漫反射">逐像素、逐顶点、半兰伯特漫反射</h3>
+<img src="/2024/02/02/shader/02/02/shader/2024-02-03-17-25-36-image.png" srcset="/img/loading.gif" lazyload class>
+<p>这是逐像素漫反射</p>
+<img src="/2024/02/02/shader/02/02/shader/2024-02-03-17-25-54-image.png" srcset="/img/loading.gif" lazyload class>
+<p>这是逐顶点漫反射</p>
+<img src="/2024/02/02/shader/02/02/shader/2024-02-03-17-27-06-image.png" srcset="/img/loading.gif" lazyload class>
+<p>这是半兰伯特漫反射</p>
 
                 
               </div>
@@ -331,9 +357,11 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" class="print-no-link">#高等数学</a>
+        <a href="/tags/UnityShader/" class="print-no-link">#UnityShader</a>
       
-        <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" class="print-no-link">#微积分</a>
+        <a href="/tags/Unity/" class="print-no-link">#Unity</a>
+      
+        <a href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/" class="print-no-link">#游戏开发</a>
       
     </div>
   
@@ -345,8 +373,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>微分方程</div>
-      <div>http://iromoe.com/2024/01/25/differential-equations/</div>
+      <div>shader</div>
+      <div>http://iromoe.com/2024/02/02/shader/</div>
     </div>
     <div class="license-meta">
       
@@ -358,7 +386,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年1月25日</div>
+          <div>2024年2月2日</div>
         </div>
       
       
@@ -396,9 +424,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/01/31/unity0/" title="unity0">
+                      <a href="/2024/02/04/windows/" title="windows">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">unity0</span>
+                        <span class="hidden-mobile">windows</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -406,8 +434,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/01/18/math2/" title="三角换元">
-                        <span class="hidden-mobile">三角换元</span>
+                      <a href="/2024/02/01/unity-camera-follow/" title="unity_camera_follow">
+                        <span class="hidden-mobile">unity_camera_follow</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -508,12 +536,6 @@
 
 
   
-
-
-  
-  
-
-
 
 
 
@@ -707,49 +729,6 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
-
-  
-      <script>
-        if (!window.MathJax) {
-          window.MathJax = {
-            tex    : {
-              inlineMath: { '[+]': [['$', '$']] }
-            },
-            loader : {
-              load: ['ui/lazy']
-            },
-            options: {
-              renderActions: {
-                insertedScript: [200, () => {
-                  document.querySelectorAll('mjx-container').forEach(node => {
-                    let target = node.parentNode;
-                    if (target.nodeName.toLowerCase() === 'li') {
-                      target.parentNode.classList.add('has-jax');
-                    }
-                  });
-                }, '', false]
-              }
-            }
-          };
-        } else {
-          MathJax.startup.document.state(0);
-          MathJax.texReset();
-          MathJax.typeset();
-          MathJax.typesetPromise();
-        }
-
-        Fluid.events.registerRefreshCallback(function() {
-          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
-            MathJax.startup.document.state(0);
-            MathJax.texReset();
-            MathJax.typeset();
-            MathJax.typesetPromise();
-          }
-        });
-      </script>
-    
-
-  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
