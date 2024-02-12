@@ -4,6 +4,48 @@
   
   
   <entry>
+    <title>高数每日练习2.12</title>
+    <link href="/2024/02/12/exercise212/"/>
+    <url>/2024/02/12/exercise212/</url>
+    
+    <content type="html"><![CDATA[<h1 id="高数每日练习2.12">高数每日练习2.12</h1><h2 id="计算定积分int_1e2frac1xsqrt1lnxdx">1. 计算定积分<span class="math inline">\(\int_{1}^{e^2}\frac{1}{x\sqrt{1+lnx}}dx\)</span></h2><p><span class="math display">\[因为\frac{d(1 + lnx)}{dx} = \frac{1}{x},\newline所以\frac{dx}{x} = \frac{d(1 + lnx)}{dx},\newline所以\int_{}^{}\frac{1}{x\sqrt{1 + lnx}}dx,\newline = \int_{}^{}\frac{1}{\sqrt{1 + lnx}}d( 1+ lnx),\newline因为\int_{}^{}\frac{1}{\sqrt{x}}dx = 2\sqrt{x} + C,\newline所以\int_{}^{}\frac{1}{\sqrt{1 + lnx}}d(1 + lnx)\newline = 2\sqrt{1+lnx}+C,\newline所以\int_{1}^{e^2}\frac{1}{x\sqrt{1 + lnx}}dx\newline = 2×\sqrt{3}-2×1\newline = 2(\sqrt{3}-1).\]</span></p><h2 id="计算导数fracdarcsinxdx">2.计算导数<span class="math inline">\(\frac{d(arcsinx)}{dx}\)</span></h2><p><span class="math display">\[因为y = arcsinx, 所以x = siny,\newline 对两边关于x求导：\newline 1 = \frac{siny}{dx}\newline 1 = cosy\frac{dy}{dx}\newline \frac{dy}{dx} = \frac{1}{cosy}\newline 因为siny = x, siny^2 + cosy^2 = 1,\newline 所以cosy = ±\sqrt{1-x^2}\newline 所以\frac{dy}{dx} = ±\frac{1}{\sqrt{1-x^2}}\newline 因为y = arcsinx图像中斜率总为正， 所以\frac{d(arcsinx)}{dx} =\frac{1}{\sqrt{1-x^2}}\]</span></p><h2 id="计算不定积分int_fracxsqrt1-x2dx">3.计算不定积分<span class="math inline">\(\int_{}^{}\frac{x}{\sqrt{1-x^2}}dx\)</span></h2><p><span class="math display">\[因为\frac{d(1-x^2)}{dx} = -2x,\newline 所以dx = \frac{d(1-x^2)}{-2x}\newline 所以\int_{}^{}\frac{x}{\sqrt{1-x^2}}dx\newline = \int_{}^{}\frac{x}{\sqrt{1-x^2}}\frac{d(1-x^2)}{-2x}\newline = \int_{}^{}-\frac{1}{2}\frac{d(1-x^2)}{\sqrt{1-x^2}}\newline = -\frac{1}{2} \int_{}^{}\frac{d(1-x^2)}{\sqrt{1-x^2}}\newline = -\frac{1}{2} × 2\sqrt{1 - x^2} + C\newline = -\sqrt{1-x^2} + C.\]</span></p><h2 id="计算不定积分int_arcsinxdx">4.计算不定积分<span class="math inline">\(\int_{}{}arcsin(x)dx\)</span></h2><p><span class="math display">\[分部积分法：\newline 令u = arcsin(x), dv = dx\newline 则v = x        , du = \frac{dx}{\sqrt{1-x^2}}\newline 所以\int_{}^{}arcsin(x)dx = xarcsin(x) -\int_{}^{}\frac{x}{\sqrt{1-x^2}}dx\newline = xarcsin(x) - (-\sqrt{1-x^2}+C)\newline = xarcsin(x) + \sqrt{1-x^2} + C\]</span></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>高等数学</tag>
+      
+      <tag>微积分</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>proxy</title>
+    <link href="/2024/02/07/proxy/"/>
+    <url>/2024/02/07/proxy/</url>
+    
+    <content type="html"><![CDATA[<h1 id="使用代理导致无法上网问题">使用代理导致无法上网问题</h1><p>系统：windows11</p><p>浏览器莫名其妙不能上网，打开TUN模式可以上网；QQ等不受影响。</p><p>因我水平不足，试过网上各种办法，如修改Windows设置、修改注册表、修改Internet设置，Windows网络重置，重新打开代理软件，都无法解决</p><p>最后解决靠<strong>360断网急救箱</strong>，不难找到单文件版本。（真好使）</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>proxy</tag>
+      
+      <tag>网络问题</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>MinecraftForge1.16.5mod开发</title>
     <link href="/2024/01/18/forge1/"/>
     <url>/2024/01/18/forge1/</url>
