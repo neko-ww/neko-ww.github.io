@@ -86,6 +86,25 @@
   
   
   <entry>
+    <title>Unity： Layout could not be fully loaded</title>
+    <link href="/posts/6/"/>
+    <url>/posts/6/</url>
+    
+    <content type="html"><![CDATA[<h1 id="unity-layout-could-not-be-fully-loaded">Unity: Layout could notbe fully loaded</h1><blockquote><p>The layout"C:/Users/<username>/AppData/Roaming/Unity/Editor-5.x/Preferences-2022.dwlt"could not be fully loaded, this can happen when the layout containsEditorWindows not available in this project.</username></p></blockquote><p>可能是该布局包含了其他Assets里的窗口，比如Navigation，但新建的项目没有安装AiNavigation，所以出现该警告</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Unity</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>MinecraftForge1.16.5mod开发</title>
     <link href="/posts/1/"/>
     <url>/posts/1/</url>
