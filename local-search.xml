@@ -46,6 +46,25 @@
   
   
   <entry>
+    <title>如何在win11终端中同时运行两条命令</title>
+    <link href="/2024/02/04/windows/"/>
+    <url>/2024/02/04/windows/</url>
+    
+    <content type="html"><![CDATA[<h3 id="如何在win11终端中同时运行两条命令">如何在win11终端中同时运行两条命令</h3><p>使用"&amp;"或"&amp;&amp;"</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs 1c">命令<span class="hljs-number">1</span> <span class="hljs-string">&quot;&amp;&quot;</span> 命令<span class="hljs-number">2</span><br></code></pre></td></tr></table></figure><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs 1c">命令<span class="hljs-number">1</span> <span class="hljs-string">&quot;&amp;&amp;&quot;</span> 命令<span class="hljs-number">2</span><br></code></pre></td></tr></table></figure><p><strong>有部分命令会报错</strong></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Windows11</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>MinecraftForge1.16.5mod开发</title>
     <link href="/2024/01/18/forge1/"/>
     <url>/2024/01/18/forge1/</url>
