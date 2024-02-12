@@ -5,8 +5,8 @@
   
   <entry>
     <title>高数每日练习2.12</title>
-    <link href="/2024/02/12/4/"/>
-    <url>/2024/02/12/4/</url>
+    <link href="/4/"/>
+    <url>/4/</url>
     
     <content type="html"><![CDATA[<h1 id="高数每日练习2.12">高数每日练习2.12</h1><h2 id="计算定积分int_1e2frac1xsqrt1lnxdx">1. 计算定积分<span class="math inline">\(\int_{1}^{e^2}\frac{1}{x\sqrt{1+lnx}}dx\)</span></h2><p><span class="math display">\[\begin{align} 因为\frac{d(1 + lnx)}{dx} = \frac{1}{x},\newline 所以\frac{dx}{x} = \frac{d(1 + lnx)}{dx},\newline 所以\int_{}^{}\frac{1}{x\sqrt{1 + lnx}}dx,\newline = \int_{}^{}\frac{1}{\sqrt{1 + lnx}}d( 1+ lnx),\newline 因为\int_{}^{}\frac{1}{\sqrt{x}}dx = 2\sqrt{x} + C,\newline 所以\int_{}^{}\frac{1}{\sqrt{1 + lnx}}d(1 + lnx)\newline = 2\sqrt{1+lnx}+C,\newline 所以\int_{1}^{e^2}\frac{1}{x\sqrt{1 + lnx}}dx\newline = 2×\sqrt{3}-2×1\newline = 2(\sqrt{3}-1).\end{align}\]</span></p><h2 id="计算导数fracdarcsinxdx">2.计算导数<span class="math inline">\(\frac{d(arcsinx)}{dx}\)</span></h2><p><span class="math display">\[\begin{align} 因为y = arcsinx, 所以x = siny,\newline 对两边关于x求导：\newline 1 = \frac{siny}{dx}\newline 1 = cosy\frac{dy}{dx}\newline \frac{dy}{dx} = \frac{1}{cosy}\newline 因为siny = x, siny^2 + cosy^2 = 1,\newline 所以cosy = ±\sqrt{1-x^2}\newline 所以\frac{dy}{dx} = ±\frac{1}{\sqrt{1-x^2}}\newline 因为y = arcsinx图像中斜率总为正，\newline 所以\frac{d(arcsinx)}{dx} = \frac{1}{\sqrt{1-x^2}}\end{align}\]</span></p><h2 id="计算不定积分int_fracxsqrt1-x2dx">3.计算不定积分<span class="math inline">\(\int_{}^{}\frac{x}{\sqrt{1-x^2}}dx\)</span></h2><p><span class="math display">\[\begin{align} 因为\frac{d(1-x^2)}{dx} = -2x,\newline 所以dx = \frac{d(1-x^2)}{-2x}\newline 所以\int_{}^{}\frac{x}{\sqrt{1-x^2}}dx\newline = \int_{}^{}\frac{x}{\sqrt{1-x^2}}\frac{d(1-x^2)}{-2x}\newline = \int_{}^{}-\frac{1}{2}\frac{d(1-x^2)}{\sqrt{1-x^2}}\newline = -\frac{1}{2} \int_{}^{}\frac{d(1-x^2)}{\sqrt{1-x^2}}\newline = -\frac{1}{2} × 2\sqrt{1 - x^2} + C\newline = -\sqrt{1-x^2} + C.\end{align}\]</span></p><h2 id="计算不定积分int_arcsinxdx">4.计算不定积分<span class="math inline">\(\int_{}{}arcsin(x)dx\)</span></h2><p><span class="math display">\[\begin{align} 分部积分法：\newline 令u = arcsin(x), dv = dx\newline 则v = x        , du = \frac{dx}{\sqrt{1-x^2}}\newline 所以\int_{}^{}arcsin(x)dx = xarcsin(x) -\int_{}^{}\frac{x}{\sqrt{1-x^2}}dx\newline = xarcsin(x) - (-\sqrt{1-x^2}+C)\newline = xarcsin(x) + \sqrt{1-x^2} + C\end{align}\]</span></p><h2 id="计算定积分int_-fracpi2fracpi21x3sin4xdx">5.计算定积分<span class="math inline">\(\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}(1+x^3)sin^4(x)dx\)</span></h2><p><span class="math display">\[\begin{align} \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}(1+x^3)sin^4(x)dx =\newline \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}sin^4(x)dx +\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}x^3sin^4(x)dx\newline 因x^3sin^4(x)为奇函数，所以\newline \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}x^3sin^4(x)dx = 0\newline 所以原式 = \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}sin^4(x)dx\newline = 2\int_{0}^{\frac{\pi}{2}}sin^4(x)dx\newline 由Wallis公式得：\newline \int_{0}^{\frac{\pi}{2}}sin^4(x)dx = \frac{3\pi}{16}\newline 所以原式 = \frac{3\pi}{8}.\end{align}\]</span></p>]]></content>
     
@@ -26,8 +26,8 @@
   
   <entry>
     <title>网站、书籍和文档</title>
-    <link href="/2024/02/12/5/"/>
-    <url>/2024/02/12/5/</url>
+    <link href="/5/"/>
+    <url>/5/</url>
     
     <content type="html"><![CDATA[<h1 id="网站">网站</h1><h2 id="learnopengl">LearnOpenGL</h2><p>site: <a href="https://learnopengl-cn.github.io/">主页 - LearnOpenGLCN (learnopengl-cn.github.io)</a></p><h1 id="书籍">书籍</h1><h2 id="cpp-game-engine-book">cpp-game-engine-book</h2><p>site: <a href="http://www.thisisgame.com.cn/tutorial?book=cpp-game-engine-book&amp;lang=zh&amp;md=Introduction.md">Introduction| 游戏引擎 浅入浅出 | 游戏人生</a></p><p>repo: https://github.com/ThisisGame/cpp-game-engine-book</p><h1 id="文档">文档</h1>]]></content>
     
@@ -39,8 +39,8 @@
   
   <entry>
     <title>使用代理导致无法上网问题</title>
-    <link href="/2024/02/07/3/"/>
-    <url>/2024/02/07/3/</url>
+    <link href="/3/"/>
+    <url>/3/</url>
     
     <content type="html"><![CDATA[<h1 id="使用代理导致无法上网问题">使用代理导致无法上网问题</h1><p>系统：windows11</p><p>浏览器莫名其妙不能上网，打开TUN模式可以上网；QQ等不受影响。</p><p>因我水平不足，试过网上各种办法，如修改Windows设置、修改注册表、修改Internet设置，Windows网络重置，重新打开代理软件，都无法解决</p><p>最后解决靠<strong>360断网急救箱</strong>，不难找到单文件版本。（真好使）</p>]]></content>
     
@@ -60,8 +60,8 @@
   
   <entry>
     <title>如何在win11终端中同时运行两条命令</title>
-    <link href="/2024/02/04/2/"/>
-    <url>/2024/02/04/2/</url>
+    <link href="/2/"/>
+    <url>/2/</url>
     
     <content type="html"><![CDATA[<h3 id="如何在win11终端中同时运行两条命令">如何在win11终端中同时运行两条命令</h3><p>使用"&amp;"或"&amp;&amp;"</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs 1c">命令<span class="hljs-number">1</span> <span class="hljs-string">&quot;&amp;&quot;</span> 命令<span class="hljs-number">2</span><br></code></pre></td></tr></table></figure><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs 1c">命令<span class="hljs-number">1</span> <span class="hljs-string">&quot;&amp;&amp;&quot;</span> 命令<span class="hljs-number">2</span><br></code></pre></td></tr></table></figure><p><strong>有部分命令会报错</strong></p>]]></content>
     
@@ -79,10 +79,10 @@
   
   <entry>
     <title>MinecraftForge1.16.5mod开发</title>
-    <link href="/2024/01/18/1/"/>
-    <url>/2024/01/18/1/</url>
+    <link href="/1/"/>
+    <url>/1/</url>
     
-    <content type="html"><![CDATA[<h1 id="向游戏中添加新的物品">1.向游戏中添加新的物品</h1><p>参考:</p><pre><code class="hljs">https://boson.v2mcdev.com/https://z7po75kre4.k.topthink.com/@1m29n4nr67/0.qianyan.html</code></pre><p>本文<strong>不介绍</strong>开发环境的配置</p><p>IDE: IntelliJ IDEA Community Edition 2023.3.2</p><p>Minecraft Edition: 1.16.5</p><p>forgeMDK Edition: forge-1.16.5-36.2.34-mdk</p><h2 id="添加物品的第一步创建其类并extends-item类">添加物品的第一步：创建其类并extendsItem类</h2><p>要通过forge创建任何新的物品，都需要先创建类并继承minecraft的Item类</p><p>现在我想向游戏中添加樱桃，先创建一个Java类 名为cherry</p><p>然后让cherry class继承Item class <img src="/2024/01/18/1/01/18/1/1.png" class></p><p>接下来，在该类中写其构造方法(与类同名) <img src="/2024/01/18/1/01/18/1/2.png" class></p><p>Java中super()可用于引用父类(也叫做超类,这里是Item类)中的成员</p><p>Properties即"属性"，food表示该物品是食物；tab表明我要将该物品添加到哪一个创造模式物品栏中；rarity表明了该物品的稀有程度</p><h2 id="section"></h2>]]></content>
+    <content type="html"><![CDATA[<h1 id="向游戏中添加新的物品">1.向游戏中添加新的物品</h1><p>参考:</p><pre><code class="hljs">https://boson.v2mcdev.com/https://z7po75kre4.k.topthink.com/@1m29n4nr67/0.qianyan.html</code></pre><p>本文<strong>不介绍</strong>开发环境的配置</p><p>IDE: IntelliJ IDEA Community Edition 2023.3.2</p><p>Minecraft Edition: 1.16.5</p><p>forgeMDK Edition: forge-1.16.5-36.2.34-mdk</p><h2 id="添加物品的第一步创建其类并extends-item类">添加物品的第一步：创建其类并extendsItem类</h2><p>要通过forge创建任何新的物品，都需要先创建类并继承minecraft的Item类</p><p>现在我想向游戏中添加樱桃，先创建一个Java类 名为cherry</p><p>然后让cherry class继承Item class <img src="/1/1.png" class></p><p>接下来，在该类中写其构造方法(与类同名) <img src="/1/2.png" class></p><p>Java中super()可用于引用父类(也叫做超类,这里是Item类)中的成员</p><p>Properties即"属性"，food表示该物品是食物；tab表明我要将该物品添加到哪一个创造模式物品栏中；rarity表明了该物品的稀有程度</p><h2 id="section"></h2>]]></content>
     
     
     
