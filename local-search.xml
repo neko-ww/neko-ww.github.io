@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>高数每日练习2.14</title>
+    <link href="/posts/7/"/>
+    <url>/posts/7/</url>
+    
+    <content type="html"><![CDATA[<h1 id="高数每日练习2.14">高数每日练习2.14</h1><h2 id="计算不定积分int_arctanx-eexxdx">1. 计算不定积分<span class="math inline">\(\int_{}^{}(arctanx + e^{e^x+x})dx\)</span></h2><p><span class="math display">\[\begin{align} \int_{}^{}arctanx+e^{e^x+x}dx =\newline xarctanx - \frac{1}{2}ln(1+x^2) + \int_{}^{}e^{e^x+x}dx\newline = xarctanx - \frac{1}{2}ln(1+x^2) + e^{e^x} + C\end{align}\]</span></p><h2 id="计算不定积分int_arctanxdx">2. 计算不定积分<span class="math inline">\(\int_{}^{}arctan(x)dx\)</span></h2><p><span class="math display">\[\begin{align} u = arctanx，dv = dx\newline      v = x      ，du = \frac{dx}{1+tan^2x}\newline 所以\int_{}^{}arctan(x)dx = xarctanx -\int_{}^{}\frac{x}{1+tan^2x}\newline = xarctanx - \frac{1}{2}ln(1+x^2) + C\end{align}\]</span></p><h2 id="计算导数fracdarctanxdx">3. 计算导数<span class="math inline">\(\frac{d(arctanx)}{dx}\)</span></h2><p><span class="math display">\[\begin{align} y = arctanx，\newline 则x = tany，\newline 两边同时对x求导得：\newline 1 = \frac{dtany}{dy}\frac{dy}{dx}\newline 1 = sec^2y·\frac{dy}{dx}\newline 1 = (1+tan^2y)·\frac{dy}{dx}\newline \frac{dy}{dx} = \frac{1}{1+tan^2y}\newline \frac{dy}{dx} = \frac{1}{1+tan^2(arctanx)}\newline \frac{dy}{dx} = \frac{1}{1+x^2}\end{align}\]</span></p><h2 id="计算不定积分int_fracx1x2dx">4. 计算不定积分<span class="math inline">\(\int_{}^{}\frac{x}{1+x^2}dx\)</span></h2><p><span class="math display">\[\begin{align} 因为\frac{d(1+x^2)}{dx} = 2x\newline 所以dx = \frac{d(1+x^2)}{2x}\newline 所以\int_{}^{}\frac{x}{1+x^2}dx =\frac{1}{2}\int_{}^{}\frac{d(1+x^2)}{1+x^2}\newline = \frac{1}{2}ln(1+x^2) + C\end{align}\]</span></p><h2 id="计算不定积分int_eexxdx">5. 计算不定积分<span class="math inline">\(\int_{}^{}e^{e^x+x}dx\)</span></h2><p><span class="math display">\[\begin{align} 换元法：\newline \int_{}^{}e^{e^x+x}dx = \int_{}^{}e^{e^x}·e^xdx\newline 因为\frac{de^x}{dx} = e^x\newline 所以e^xdx = de^x\newline 所以\int_{}^{}e^{e^x}·e^xdx = \int_{}^{}e^{e^x}de^x\newline 令t = e^x, 则原式 =\newline \int_{}^{}e^tdt = e^t + C\newline 即e^{e^x} + C\end{align}\]</span></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>高等数学</tag>
+      
+      <tag>微积分</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>高数每日练习2.12</title>
     <link href="/posts/4/"/>
     <url>/posts/4/</url>

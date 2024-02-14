@@ -16,15 +16,15 @@
   <meta name="author" content="neko-ww">
   <meta name="keywords" content="">
   
-    <meta name="description" content="高数每日练习2.12 1. 计算定积分\(\int_{1}^{e^2}\frac{1}{x\sqrt{1+lnx}}dx\) \[ \begin{align} 因为\frac{d(1 + lnx)}{dx} &#x3D; \frac{1}{x}, \newline 所以\frac{dx}{x} &#x3D; \frac{d(1 + lnx)}{dx}, \newline 所以\int_{}^{}\frac{">
+    <meta name="description" content="高数每日练习2.14 1. 计算不定积分\(\int_{}^{}(arctanx + e^{e^x+x})dx\) \[ \begin{align} \int_{}^{}arctanx+e^{e^x+x}dx &#x3D; \newline xarctanx - \frac{1}{2}ln(1+x^2) + \int_{}^{}e^{e^x+x}dx \newline &#x3D; xarctanx - \">
 <meta property="og:type" content="article">
-<meta property="og:title" content="高数每日练习2.12">
-<meta property="og:url" content="http://iromoe.com/posts/4/index.html">
+<meta property="og:title" content="高数每日练习2.14">
+<meta property="og:url" content="http://iromoe.com/posts/7/index.html">
 <meta property="og:site_name" content="neko-ww">
-<meta property="og:description" content="高数每日练习2.12 1. 计算定积分\(\int_{1}^{e^2}\frac{1}{x\sqrt{1+lnx}}dx\) \[ \begin{align} 因为\frac{d(1 + lnx)}{dx} &#x3D; \frac{1}{x}, \newline 所以\frac{dx}{x} &#x3D; \frac{d(1 + lnx)}{dx}, \newline 所以\int_{}^{}\frac{">
+<meta property="og:description" content="高数每日练习2.14 1. 计算不定积分\(\int_{}^{}(arctanx + e^{e^x+x})dx\) \[ \begin{align} \int_{}^{}arctanx+e^{e^x+x}dx &#x3D; \newline xarctanx - \frac{1}{2}ln(1+x^2) + \int_{}^{}e^{e^x+x}dx \newline &#x3D; xarctanx - \">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-02-12T10:50:00.000Z">
-<meta property="article:modified_time" content="2024-02-12T15:29:44.238Z">
+<meta property="article:published_time" content="2024-02-14T04:44:00.000Z">
+<meta property="article:modified_time" content="2024-02-14T04:44:31.800Z">
 <meta property="article:author" content="neko-ww">
 <meta property="article:tag" content="高等数学">
 <meta property="article:tag" content="微积分">
@@ -32,7 +32,7 @@
   
   
   
-  <title>高数每日练习2.12 - neko-ww</title>
+  <title>高数每日练习2.14 - neko-ww</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -202,7 +202,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="高数每日练习2.12"></span>
+            <span id="subtitle" data-typed-text="高数每日练习2.14"></span>
           
         </div>
 
@@ -213,8 +213,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-02-12 18:50" pubdate>
-          2024年2月12日 晚上
+        <time datetime="2024-02-14 12:44" pubdate>
+          2024年2月14日 下午
         </time>
       </span>
     
@@ -225,7 +225,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          541 字
+          334 字
         
       </span>
     
@@ -236,7 +236,7 @@
         
         
         
-          5 分钟
+          3 分钟
         
       </span>
     
@@ -273,75 +273,60 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">高数每日练习2.12</h1>
+            <h1 id="seo-header">高数每日练习2.14</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="高数每日练习2.12">高数每日练习2.12</h1>
-<h2 id="计算定积分int_1e2frac1xsqrt1lnxdx">1. 计算定积分<span class="math inline">\(\int_{1}^{e^2}\frac{1}{x\sqrt{1+lnx}}dx\)</span></h2>
+                <h1 id="高数每日练习2.14">高数每日练习2.14</h1>
+<h2 id="计算不定积分int_arctanx-eexxdx">1. 计算不定积分<span class="math inline">\(\int_{}^{}(arctanx + e^{e^x+x})dx\)</span></h2>
 <p><span class="math display">\[
-\begin{align} 因为\frac{d(1 + lnx)}{dx} = \frac{1}{x},
-\newline 所以\frac{dx}{x} = \frac{d(1 + lnx)}{dx},
-\newline 所以\int_{}^{}\frac{1}{x\sqrt{1 + lnx}}dx,
-\newline = \int_{}^{}\frac{1}{\sqrt{1 + lnx}}d( 1+ lnx),
-\newline 因为\int_{}^{}\frac{1}{\sqrt{x}}dx = 2\sqrt{x} + C,
-\newline 所以\int_{}^{}\frac{1}{\sqrt{1 + lnx}}d(1 + lnx)
-\newline = 2\sqrt{1+lnx}+C,
-\newline 所以\int_{1}^{e^2}\frac{1}{x\sqrt{1 + lnx}}dx
-\newline = 2×\sqrt{3}-2×1
-\newline = 2(\sqrt{3}-1).
+\begin{align} \int_{}^{}arctanx+e^{e^x+x}dx =
+\newline xarctanx - \frac{1}{2}ln(1+x^2) + \int_{}^{}e^{e^x+x}dx
+\newline = xarctanx - \frac{1}{2}ln(1+x^2) + e^{e^x} + C
 \end{align}
 \]</span></p>
-<h2 id="计算导数fracdarcsinxdx">2.计算导数<span class="math inline">\(\frac{d(arcsinx)}{dx}\)</span></h2>
+<h2 id="计算不定积分int_arctanxdx">2. 计算不定积分<span class="math inline">\(\int_{}^{}arctan(x)dx\)</span></h2>
 <p><span class="math display">\[
-\begin{align} 因为y = arcsinx, 所以x = siny,
-\newline 对两边关于x求导：
-\newline 1 = \frac{siny}{dx}
-\newline 1 = cosy\frac{dy}{dx}
-\newline \frac{dy}{dx} = \frac{1}{cosy}
-\newline 因为siny = x, siny^2 + cosy^2 = 1,
-\newline 所以cosy = ±\sqrt{1-x^2}
-\newline 所以\frac{dy}{dx} = ±\frac{1}{\sqrt{1-x^2}}
-\newline 因为y = arcsinx图像中斜率总为正，
-\newline 所以\frac{d(arcsinx)}{dx} = \frac{1}{\sqrt{1-x^2}}
+\begin{align} u = arctanx，dv = dx
+\newline      v = x      ，du = \frac{dx}{1+tan^2x}
+\newline 所以\int_{}^{}arctan(x)dx = xarctanx -
+\int_{}^{}\frac{x}{1+tan^2x}
+\newline = xarctanx - \frac{1}{2}ln(1+x^2) + C
 \end{align}
 \]</span></p>
-<h2 id="计算不定积分int_fracxsqrt1-x2dx">3.计算不定积分<span class="math inline">\(\int_{}^{}\frac{x}{\sqrt{1-x^2}}dx\)</span></h2>
+<h2 id="计算导数fracdarctanxdx">3. 计算导数<span class="math inline">\(\frac{d(arctanx)}{dx}\)</span></h2>
 <p><span class="math display">\[
-\begin{align} 因为\frac{d(1-x^2)}{dx} = -2x,
-\newline 所以dx = \frac{d(1-x^2)}{-2x}
-\newline 所以\int_{}^{}\frac{x}{\sqrt{1-x^2}}dx
-\newline = \int_{}^{}\frac{x}{\sqrt{1-x^2}}\frac{d(1-x^2)}{-2x}
-\newline = \int_{}^{}-\frac{1}{2}\frac{d(1-x^2)}{\sqrt{1-x^2}}
-\newline = -\frac{1}{2} \int_{}^{}\frac{d(1-x^2)}{\sqrt{1-x^2}}
-\newline = -\frac{1}{2} × 2\sqrt{1 - x^2} + C
-\newline = -\sqrt{1-x^2} + C.
+\begin{align} y = arctanx，
+\newline 则x = tany，
+\newline 两边同时对x求导得：
+\newline 1 = \frac{dtany}{dy}\frac{dy}{dx}
+\newline 1 = sec^2y·\frac{dy}{dx}
+\newline 1 = (1+tan^2y)·\frac{dy}{dx}
+\newline \frac{dy}{dx} = \frac{1}{1+tan^2y}
+\newline \frac{dy}{dx} = \frac{1}{1+tan^2(arctanx)}
+\newline \frac{dy}{dx} = \frac{1}{1+x^2}
 \end{align}
 \]</span></p>
-<h2 id="计算不定积分int_arcsinxdx">4.计算不定积分<span class="math inline">\(\int_{}{}arcsin(x)dx\)</span></h2>
+<h2 id="计算不定积分int_fracx1x2dx">4. 计算不定积分<span class="math inline">\(\int_{}^{}\frac{x}{1+x^2}dx\)</span></h2>
 <p><span class="math display">\[
-\begin{align} 分部积分法：
-\newline 令u = arcsin(x), dv = dx
-\newline 则v = x        , du = \frac{dx}{\sqrt{1-x^2}}
-\newline 所以\int_{}^{}arcsin(x)dx = xarcsin(x) -
-\int_{}^{}\frac{x}{\sqrt{1-x^2}}dx
-\newline = xarcsin(x) - (-\sqrt{1-x^2}+C)
-\newline = xarcsin(x) + \sqrt{1-x^2} + C
+\begin{align} 因为\frac{d(1+x^2)}{dx} = 2x
+\newline 所以dx = \frac{d(1+x^2)}{2x}
+\newline 所以\int_{}^{}\frac{x}{1+x^2}dx =
+\frac{1}{2}\int_{}^{}\frac{d(1+x^2)}{1+x^2}
+\newline = \frac{1}{2}ln(1+x^2) + C
 \end{align}
 \]</span></p>
-<h2 id="计算定积分int_-fracpi2fracpi21x3sin4xdx">5.计算定积分<span class="math inline">\(\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}(1+x^3)sin^4(x)dx\)</span></h2>
+<h2 id="计算不定积分int_eexxdx">5. 计算不定积分<span class="math inline">\(\int_{}^{}e^{e^x+x}dx\)</span></h2>
 <p><span class="math display">\[
-\begin{align} \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}(1+x^3)sin^4(x)dx =
-\newline \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}sin^4(x)dx +
-\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}x^3sin^4(x)dx
-\newline 因x^3sin^4(x)为奇函数，所以
-\newline \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}x^3sin^4(x)dx = 0
-\newline 所以原式 = \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}sin^4(x)dx
-\newline = 2\int_{0}^{\frac{\pi}{2}}sin^4(x)dx
-\newline 由Wallis公式得：
-\newline \int_{0}^{\frac{\pi}{2}}sin^4(x)dx = \frac{3\pi}{16}
-\newline 所以原式 = \frac{3\pi}{8}.
+\begin{align} 换元法：
+\newline \int_{}^{}e^{e^x+x}dx = \int_{}^{}e^{e^x}·e^xdx
+\newline 因为\frac{de^x}{dx} = e^x
+\newline 所以e^xdx = de^x
+\newline 所以\int_{}^{}e^{e^x}·e^xdx = \int_{}^{}e^{e^x}de^x
+\newline 令t = e^x, 则原式 =
+\newline \int_{}^{}e^tdt = e^t + C
+\newline 即e^{e^x} + C
 \end{align}
 \]</span></p>
 
@@ -370,8 +355,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>高数每日练习2.12</div>
-      <div>http://iromoe.com/posts/4/</div>
+      <div>高数每日练习2.14</div>
+      <div>http://iromoe.com/posts/7/</div>
     </div>
     <div class="license-meta">
       
@@ -383,7 +368,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年2月12日</div>
+          <div>2024年2月14日</div>
         </div>
       
       
@@ -421,18 +406,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/7/" title="高数每日练习2.14">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">高数每日练习2.14</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/posts/5/" title="网站、书籍和文档">
-                        <span class="hidden-mobile">网站、书籍和文档</span>
+                      <a href="/posts/4/" title="高数每日练习2.12">
+                        <span class="hidden-mobile">高数每日练习2.12</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
