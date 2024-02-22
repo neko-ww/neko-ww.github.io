@@ -8,7 +8,7 @@
     <link href="/posts/10/"/>
     <url>/posts/10/</url>
     
-    <content type="html"><![CDATA[<h1 id="手动下载gradle下载的包">手动下载Gradle下载的包</h1><p>打开.gradle(在Users/你的用户名下或自定义目录下)或使用Everything搜索要下载的包，</p><figure><img src="/posts/10/neko-ww\source_posts\10\1.png" alt="1"><figcaption aria-hidden="true">1</figcaption></figure><p>定位到Gradle下载包的位置</p><figure><img src="/posts/10/neko-ww\source_posts\10\2.png" alt="2"><figcaption aria-hidden="true">2</figcaption></figure><p>上图中.lock文件是Gradle下载的，上面两个文件请忽略，通过Gradle的下载链接手动下载包</p><figure><img src="/posts/10/neko-ww\source_posts\10\3.png" alt="3"><figcaption aria-hidden="true">3</figcaption></figure><figure><img src="/posts/10/neko-ww\source_posts\10\4.png" alt="4"><figcaption aria-hidden="true">4</figcaption></figure><p>将该zip文件移动到上面的目录，然后根据Gradle下载的文件修改我们下好文件的名称，我这里把<em>OpenJDK8U-jdk_x64_windows_hotspot_8u402b06.zip</em>改为<em>adoptopenjdk-8-x64-windows.zip</em>,然后重新Build，Gradle会自动解压我们放置好的包，<img src="/posts/10/neko-ww\source_posts\10\5.png" alt="5"></p><p>.</p><h2 id="另一种包的位置">另一种包的位置</h2><figure><img src="/posts/10/neko-ww\source_posts\10\image-20240222170318057.png" alt="image-20240222170318057"><figcaption aria-hidden="true">image-20240222170318057</figcaption></figure><p>这里文件夹的名字其实是下载的jar文件的SHA1码，手动下载后对照SHA1放入包文件即可.</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="手动下载gradle下载的包">手动下载Gradle下载的包</h1><p>打开.gradle(在Users/你的用户名下或自定义目录下)或使用Everything搜索要下载的包，</p><figure><img src="/posts/10/1.png" alt="1"><figcaption aria-hidden="true">1</figcaption></figure><p>定位到Gradle下载包的位置</p><figure><img src="/posts/10/2.png" alt="2"><figcaption aria-hidden="true">2</figcaption></figure><p>上图中.lock文件是Gradle下载的，上面两个文件请忽略，通过Gradle的下载链接手动下载包</p><figure><img src="/posts/10/3.png" alt="3"><figcaption aria-hidden="true">3</figcaption></figure><figure><img src="/posts/10/4.png" alt="4"><figcaption aria-hidden="true">4</figcaption></figure><p>将该zip文件移动到上面的目录，然后根据Gradle下载的文件修改我们下好文件的名称，我这里把<em>OpenJDK8U-jdk_x64_windows_hotspot_8u402b06.zip</em>改为<em>adoptopenjdk-8-x64-windows.zip</em>,然后重新Build，Gradle会自动解压我们放置好的包，<img src="/posts/10/5.png" alt="5"></p><p>.</p><h2 id="另一种包的位置">另一种包的位置</h2><figure><img src="/posts/10/6.png" alt="6"><figcaption aria-hidden="true">6</figcaption></figure><p>这里文件夹的名字其实是下载的jar文件的SHA1码，手动下载后对照SHA1放入包文件即可.</p>]]></content>
     
     
     
@@ -17,31 +17,6 @@
       <tag>MinecraftForge</tag>
       
       <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>阅读Linux源码</title>
-    <link href="/posts/9/"/>
-    <url>/posts/9/</url>
-    
-    <content type="html"><![CDATA[<p>环境：Windows11</p><p>Linux内核版本：0.01</p><h1 id="源码中各文件作用">源码中各文件作用</h1><p>摘自<a href="https://zhuanlan.zhihu.com/p/581985060">千万字肝翻《Linux内核源码》，对底层原理深耕深分析，从入门到入狱（超硬核~）- 知乎 (zhihu.com)</a></p><blockquote><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs cpp">&gt;kernel/ ---- Linux内核的核心代码，包含了<span class="hljs-number">3.2</span>小节所描述的进程调度子系统，以及和进程调度相关的模块。<br>&gt;mm/ ---- 内存管理子系统（<span class="hljs-number">3.3</span>小节）。fs/ ---- VFS子系统（<span class="hljs-number">3.4</span>小节）。<br>&gt;net/ ---- 不包括网络设备驱动的网络子系统（<span class="hljs-number">3.5</span>小节）。<br>&gt;ipc/ ---- IPC（进程间通信）子系统。<br>&gt;arch<span class="hljs-comment">// ---- 体系结构相关的代码，例如arm, x86等等。 </span><br>&gt;arch<span class="hljs-comment">//mach- ---- 具体的machine/board相关的代码。 </span><br>&gt;arch<span class="hljs-comment">//include/asm ---- 体系结构相关的头文件。 </span><br>&gt;arch<span class="hljs-comment">//boot/dts ---- 设备树（Device Tree）文件。init/ ---- Linux系统启动初始化相关的代码。 </span><br>&gt;block/ ---- 提供块设备的层次。 <br>&gt;sound/ ---- 音频相关的驱动及子系统，可以看作“音频子系统”。 <br>&gt;drivers/ ---- 设备驱动（在Linux kernel <span class="hljs-number">3.10</span>中，设备驱动占了<span class="hljs-number">49.4</span>的代码量）。lib/ ---- 实现需要在内核中使用的库函数，例如CRC、FIFO、list、MD5等。 <br>&gt;crypto/ ----- 加密、解密相关的库函数。 <br>&gt;security/ ---- 提供安全特性（SELinux）。 <br>&gt;virt/ ---- 提供虚拟机技术（KVM等）的支持。 <br>&gt;usr/ ---- 用于生成initramfs的代码。 <br>&gt;firmware/ ---- 保存用于驱动第三方设备的固件。samples/ ---- 一些示例代码。 <br>&gt;tools/ ---- 一些常用工具，如性能剖析、自测试等。Kconfig, Kbuild, Makefile, scripts/ ---- 用于内核编译的配置文件、脚本等。COPYING ---- 版权声明。 <br>&gt;MAINTAINERS ----维护者名单。 <br>&gt;CREDITS ---- Linux主要的贡献者名单。 <br>&gt;REPORTING-BUGS ---- Bug上报的指南。Documentation, README ---- 帮助、说明文档。<br></code></pre></td></tr></table></figure></blockquote><p>文件目录：<img src="/posts/9/neko-ww\source_posts\9\1.png" alt="1"></p><h2 id="ifndef-...-define-...">#ifndef ... #define ...</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">ifndef</span> _HEAD_H</span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> _HEAD_H</span><br><br>...<br>    <br><span class="hljs-meta">#<span class="hljs-keyword">endif</span></span><br></code></pre></td></tr></table></figure><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">pragma</span> once</span><br></code></pre></td></tr></table></figure><p>上述两段作用相同，都是为了防止该头文件被多次包含。</p><p>_HEAD_H是头文件的标识符，我们约定全部大写。</p><p>HEAD是其文件名，H表示.h文件（头文件）。</p><p>具体逻辑是：如果该头文件从未被包含，那么就包含该文件，即#define,定义_HEAD_H表示该文件被包含。</p><p>如果下一次又要包含该文件，因为_HEAD_H已经被定义，表明该头文件已经被包含过，所以#ifndef后面的代码不被包含。</p><h2 id="asm__">__asm__</h2><blockquote><p>For the C language, the <code>asm</code> keyword is a GNU extension.When writing C code that can be compiled with <a href="https://gcc.gnu.org/onlinedocs/gcc/gcc-command-options/options-controlling-c-dialect.html#cmdoption-ansi"><code>-ansi</code></a>and the <a href="https://gcc.gnu.org/onlinedocs/gcc/gcc-command-options/options-controlling-c-dialect.html#cmdoption-std"><code>-std</code></a>options that select C dialects without GNU extensions, use<code>__asm__</code> instead of <code>asm</code> (see <a href="https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/alternate-keywords.html#alternate-keywords">AlternateKeywords</a>). For the C++ language, <code>asm</code> is a standardkeyword, but <code>__asm__</code> can be used for code compiled with <a href="https://gcc.gnu.org/onlinedocs/gcc/gcc-command-options/options-controlling-c-dialect.html#cmdoption-fno-asm"><code>-fno-asm</code></a>.</p></blockquote><p>摘自<a href="https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/how-to-use-inline-assembly-language-in-c-code.html">Howto Use Inline Assembly Language in C Code - Using the GNU CompilerCollection 13.0.0 (experimental 20221114) documentation</a></p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>Linux</tag>
-      
-      <tag>C</tag>
-      
-      <tag>操作系统</tag>
-      
-      <tag>汇编</tag>
       
     </tags>
     
