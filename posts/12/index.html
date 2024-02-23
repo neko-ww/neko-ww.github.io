@@ -16,26 +16,23 @@
   <meta name="author" content="neko-ww">
   <meta name="keywords" content="">
   
-    <meta name="description" content="1.向游戏中添加新的物品 参考: https:&#x2F;&#x2F;boson.v2mcdev.com&#x2F;  https:&#x2F;&#x2F;z7po75kre4.k.topthink.com&#x2F;@1m29n4nr67&#x2F;0.qianyan.html 本文不介绍开发环境的配置 IDE: IntelliJ IDEA Community Edition 2023.3.2 Minecraft Edition: 1.16.5 f">
+    <meta name="description" content="高数每日练习2.23 \(\underset{x \to 0}{\lim}\frac{\int_{0}^{x^2}sintdt}{x^4}\) \[ 因为\int_{}^{}sintdt &#x3D; -cost + C, \newline 所以\int_{0}^{x^2}sintdt &#x3D; -cosx^2 + 1 \newline 原式可由洛必达法则，变为： \newline \underse">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MinecraftForge1.16.5mod开发">
-<meta property="og:url" content="http://iromoe.com/posts/1/index.html">
+<meta property="og:title" content="高数每日练习2.23">
+<meta property="og:url" content="http://iromoe.com/posts/12/index.html">
 <meta property="og:site_name" content="neko-ww">
-<meta property="og:description" content="1.向游戏中添加新的物品 参考: https:&#x2F;&#x2F;boson.v2mcdev.com&#x2F;  https:&#x2F;&#x2F;z7po75kre4.k.topthink.com&#x2F;@1m29n4nr67&#x2F;0.qianyan.html 本文不介绍开发环境的配置 IDE: IntelliJ IDEA Community Edition 2023.3.2 Minecraft Edition: 1.16.5 f">
+<meta property="og:description" content="高数每日练习2.23 \(\underset{x \to 0}{\lim}\frac{\int_{0}^{x^2}sintdt}{x^4}\) \[ 因为\int_{}^{}sintdt &#x3D; -cost + C, \newline 所以\int_{0}^{x^2}sintdt &#x3D; -cosx^2 + 1 \newline 原式可由洛必达法则，变为： \newline \underse">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://iromoe.com/posts/1/1/1.png">
-<meta property="og:image" content="http://iromoe.com/posts/1/1/2.png">
-<meta property="article:published_time" content="2024-01-18T07:09:39.000Z">
-<meta property="article:modified_time" content="2024-02-12T15:41:25.044Z">
+<meta property="article:published_time" content="2024-02-23T16:06:00.000Z">
+<meta property="article:modified_time" content="2024-02-23T16:31:08.201Z">
 <meta property="article:author" content="neko-ww">
-<meta property="article:tag" content="Java">
-<meta property="article:tag" content="MinecraftForge">
+<meta property="article:tag" content="高等数学">
+<meta property="article:tag" content="微积分">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://iromoe.com/posts/1/1/1.png">
   
   
   
-  <title>MinecraftForge1.16.5mod开发 - neko-ww</title>
+  <title>高数每日练习2.23 - neko-ww</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -205,7 +202,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="MinecraftForge1.16.5mod开发"></span>
+            <span id="subtitle" data-typed-text="高数每日练习2.23"></span>
           
         </div>
 
@@ -216,8 +213,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-01-18 15:09" pubdate>
-          2024年1月18日 下午
+        <time datetime="2024-02-24 00:06" pubdate>
+          2024年2月24日 凌晨
         </time>
       </span>
     
@@ -228,7 +225,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          205 字
+          90 字
         
       </span>
     
@@ -239,7 +236,7 @@
         
         
         
-          2 分钟
+          1 分钟
         
       </span>
     
@@ -276,29 +273,23 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">MinecraftForge1.16.5mod开发</h1>
+            <h1 id="seo-header">高数每日练习2.23</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="向游戏中添加新的物品">1.向游戏中添加新的物品</h1>
-<p>参考:</p>
-<pre><code class="hljs">https://boson.v2mcdev.com/
-
-https://z7po75kre4.k.topthink.com/@1m29n4nr67/0.qianyan.html</code></pre>
-<p>本文<strong>不介绍</strong>开发环境的配置</p>
-<p>IDE: IntelliJ IDEA Community Edition 2023.3.2</p>
-<p>Minecraft Edition: 1.16.5</p>
-<p>forgeMDK Edition: forge-1.16.5-36.2.34-mdk</p>
-<h2 id="添加物品的第一步创建其类并extends-item类">添加物品的第一步：创建其类并extends
-Item类</h2>
-<p>要通过forge创建任何新的物品，都需要先创建类并继承minecraft的Item类</p>
-<p>现在我想向游戏中添加樱桃，先创建一个Java类 名为cherry</p>
-<p>然后让cherry class继承Item class <img src="/posts/1/1/1.png" class></p>
-<p>接下来，在该类中写其构造方法(与类同名) <img src="/posts/1/1/2.png" class></p>
-<p>Java中super()可用于引用父类(也叫做超类,这里是Item类)中的成员</p>
-<p>Properties即"属性"，food表示该物品是食物；tab表明我要将该物品添加到哪一个创造模式物品栏中；rarity表明了该物品的稀有程度</p>
-<h2 id="section"></h2>
+                <h1 id="高数每日练习2.23">高数每日练习2.23</h1>
+<h2 id="undersetx-to-0limfracint_0x2sintdtx4"><span class="math inline">\(\underset{x \to
+0}{\lim}\frac{\int_{0}^{x^2}sintdt}{x^4}\)</span></h2>
+<p><span class="math display">\[
+因为\int_{}^{}sintdt = -cost + C,
+\newline 所以\int_{0}^{x^2}sintdt = -cosx^2 + 1
+\newline 原式可由洛必达法则，变为：
+\newline \underset{x \to 0}{\lim}\frac{sinx^2 \times 2x}{4x^3} =
+\underset{x \to 0}{\lim}\frac{sinx^2}{2x^2}
+\overset{l&#39;H}{=}\frac{cosx^2\times2x}{4x}
+\newline = \underset{x \to 0}{\lim}\frac{cosx^2}{2} = \frac{1}{2}
+\]</span></p>
 
                 
               </div>
@@ -311,9 +302,9 @@ Item类</h2>
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Java/" class="print-no-link">#Java</a>
+        <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" class="print-no-link">#高等数学</a>
       
-        <a href="/tags/MinecraftForge/" class="print-no-link">#MinecraftForge</a>
+        <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" class="print-no-link">#微积分</a>
       
     </div>
   
@@ -325,8 +316,8 @@ Item类</h2>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>MinecraftForge1.16.5mod开发</div>
-      <div>http://iromoe.com/posts/1/</div>
+      <div>高数每日练习2.23</div>
+      <div>http://iromoe.com/posts/12/</div>
     </div>
     <div class="license-meta">
       
@@ -338,7 +329,7 @@ Item类</h2>
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年1月18日</div>
+          <div>2024年2月24日</div>
         </div>
       
       
@@ -376,15 +367,15 @@ Item类</h2>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/6/" title="Unity： Layout could not be fully loaded">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Unity： Layout could not be fully loaded</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/posts/10/" title="手动下载Gradle下载的包">
+                        <span class="hidden-mobile">手动下载Gradle下载的包</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
@@ -482,6 +473,12 @@ Item类</h2>
 
 
   
+
+
+  
+  
+
+
 
 
 
@@ -671,6 +668,49 @@ Item类</h2>
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
