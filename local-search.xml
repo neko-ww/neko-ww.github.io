@@ -8,7 +8,7 @@
     <link href="/posts/12/"/>
     <url>/posts/12/</url>
     
-    <content type="html"><![CDATA[<h1 id="高数每日练习2.23">高数每日练习2.23</h1><h2 id="undersetx-to-0limfracint_0x2sintdtx4"><span class="math inline">\(\underset{x \to0}{\lim}\frac{\int_{0}^{x^2}sintdt}{x^4}\)</span></h2><p><span class="math display">\[因为\int_{}^{}sintdt = -cost + C,\newline 所以\int_{0}^{x^2}sintdt = -cosx^2 + 1\newline 原式可由洛必达法则，变为：\newline \underset{x \to 0}{\lim}\frac{sinx^2 \times 2x}{4x^3} =\underset{x \to 0}{\lim}\frac{sinx^2}{2x^2}\overset{l&#39;H}{=}\frac{cosx^2\times2x}{4x}\newline = \underset{x \to 0}{\lim}\frac{cosx^2}{2} = \frac{1}{2}\]</span></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="高数每日练习2.23">高数每日练习2.23</h1><h2 id="undersetx-to-0limfracint_0x2sintdtx4"><span class="math inline">\(\underset{x \to0}{\lim}\frac{\int_{0}^{x^2}sintdt}{x^4}\)</span></h2><p><span class="math display">\[\begin{align} &amp;因为\int_{}^{}sintdt = -cost + C,\newline &amp;所以\int_{0}^{x^2}sintdt = -cosx^2 + 1\newline &amp;原式可由洛必达法则，变为：\newline &amp;\underset{x \to 0}{\lim}\frac{sinx^2 \times 2x}{4x^3} =\underset{x \to 0}\newline {\lim}\frac{sinx^2}{2x^2}\overset{l&#39;H}{=}\frac{cosx^2\times2x}{4x}\newline &amp;\underset{x \to 0}{\lim}\frac{cosx^2}{2} = \frac{1}{2}\end{align}\]</span></p>]]></content>
     
     
     
@@ -35,9 +35,9 @@
     
     <tags>
       
-      <tag>Java</tag>
-      
       <tag>MinecraftForge</tag>
+      
+      <tag>Java</tag>
       
     </tags>
     
@@ -199,9 +199,9 @@
     
     <tags>
       
-      <tag>Java</tag>
-      
       <tag>MinecraftForge</tag>
+      
+      <tag>Java</tag>
       
     </tags>
     
