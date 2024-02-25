@@ -4,27 +4,6 @@
   
   
   <entry>
-    <title>高数每日练习2.23</title>
-    <link href="/posts/12/"/>
-    <url>/posts/12/</url>
-    
-    <content type="html"><![CDATA[<h1 id="高数每日练习2.23">高数每日练习2.23</h1><h2 id="undersetx-to-0limfracint_0x2sintdtx4"><span class="math inline">\(\underset{x \to0}{\lim}\frac{\int_{0}^{x^2}sintdt}{x^4}\)</span></h2><p><span class="math display">\[\begin{align} &amp;因为\int_{}^{}sintdt = -cost + C,\newline &amp;所以\int_{0}^{x^2}sintdt = -cosx^2 + 1\newline &amp;原式可由洛必达法则，变为：\newline &amp;\underset{x \to 0}{\lim}\frac{sinx^2 \times 2x}{4x^3} =\underset{x \to 0}\newline {\lim}\frac{sinx^2}{2x^2}\overset{l&#39;H}{=}\frac{cosx^2\times2x}{4x}\newline &amp;\underset{x \to 0}{\lim}\frac{cosx^2}{2} = \frac{1}{2}\end{align}\]</span></p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>高等数学</tag>
-      
-      <tag>微积分</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>手动下载Gradle下载的包</title>
     <link href="/posts/10/"/>
     <url>/posts/10/</url>
@@ -35,72 +14,9 @@
     
     <tags>
       
-      <tag>Java</tag>
-      
       <tag>MinecraftForge</tag>
       
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>高数每日练习2.20</title>
-    <link href="/posts/8/"/>
-    <url>/posts/8/</url>
-    
-    <content type="html"><![CDATA[<h1 id="高数每日练习2.20">高数每日练习2.20</h1><h2 id="计算广义积分int_0inftyte-2tdt">计算广义积分<span class="math inline">\(\int_{0}^{+\infty}te^{-2t}dt\)</span></h2><p><span class="math display">\[\begin{align} &amp;\int_{0}^{+\infty}te^{-2t}dt =\lim_{N→\infty}\int_{0}^{N}te^{-2t}dt\newline &amp;首先，该积分的被积函数在其上下界内仅有一个瑕点：\newline &amp;x = +\infty\newline &amp;因为\frac{d(e^{-2t})}{dt} = -2e^{-2t}\newline &amp;所以d(e^-2t) = -2e^{-2t}dt\newline &amp;所以te^{-2t}dt = -\frac{1}{2}td(e^{-2t})\newline &amp;所以\int_{}^{}te^{-2t}dt =-\frac{1}{2}\int_{}^{}td(e^{-2t})\newline &amp;分部积分法：\newline &amp;v = t，du = de^{-2t}\newline &amp;u = e^{-2t}，dv = dt\newline &amp;原式 = -\frac{1}{2}(te^{-2t} - \int_{}^{}e^{-2t}dt)\newline &amp;= -\frac{1}{2}te^{-2t} + \frac{1}{2}\int_{}^{}e^{-2t}dt\newline &amp;= -\frac{1}{2}te^{-2t} -\frac{1}{4}e^{-2t}\newline &amp;t = 0时,原式等于-\frac{1}{4},\newline &amp;所以\lim_{N→\infty}\int_{0}^{N}te^{-2t}dt =\newline &amp;\lim_{N→\infty}(-\frac{1}{2}Ne^{-2N} -\frac{1}{4}e^{-2N})+ \frac{1}{4}\newline &amp;= \lim_{N→\infty}-\frac{1}{2}e^{-2N}(N-\frac{1}{2}) +\frac{1}{4}\newline &amp;=\lim_{N→\infty}-\frac{1}{2}\frac{1}{e^{2N}}(N-\frac{1}{2}) + \frac{1}{4}\newline &amp; \overset{l&#39;H}=\lim_{N→\infty}-\frac{1}{4}\frac{1}{e^{2N}} + \frac{1}{4}\newline &amp;= \frac{1}{4}\end{align}\]</span></p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>高等数学</tag>
-      
-      <tag>微积分</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>高数每日练习2.14</title>
-    <link href="/posts/7/"/>
-    <url>/posts/7/</url>
-    
-    <content type="html"><![CDATA[<h1 id="高数每日练习2.14">高数每日练习2.14</h1><h2 id="计算不定积分int_arctanx-eexxdx">1. 计算不定积分<span class="math inline">\(\int_{}^{}(arctanx + e^{e^x+x})dx\)</span></h2><p><span class="math display">\[\begin{align} \int_{}^{}arctanx+e^{e^x+x}dx =\newline xarctanx - \frac{1}{2}ln(1+x^2) + \int_{}^{}e^{e^x+x}dx\newline = xarctanx - \frac{1}{2}ln(1+x^2) + e^{e^x} + C\end{align}\]</span></p><h2 id="计算不定积分int_arctanxdx">2. 计算不定积分<span class="math inline">\(\int_{}^{}arctan(x)dx\)</span></h2><p><span class="math display">\[\begin{align} u = arctanx，dv = dx\newline      v = x      ，du = \frac{dx}{1+tan^2x}\newline 所以\int_{}^{}arctan(x)dx = xarctanx -\int_{}^{}\frac{x}{1+tan^2x}\newline = xarctanx - \frac{1}{2}ln(1+x^2) + C\end{align}\]</span></p><h2 id="计算导数fracdarctanxdx">3. 计算导数<span class="math inline">\(\frac{d(arctanx)}{dx}\)</span></h2><p><span class="math display">\[\begin{align} y = arctanx，\newline 则x = tany，\newline 两边同时对x求导得：\newline 1 = \frac{dtany}{dy}\frac{dy}{dx}\newline 1 = sec^2y·\frac{dy}{dx}\newline 1 = (1+tan^2y)·\frac{dy}{dx}\newline \frac{dy}{dx} = \frac{1}{1+tan^2y}\newline \frac{dy}{dx} = \frac{1}{1+tan^2(arctanx)}\newline \frac{dy}{dx} = \frac{1}{1+x^2}\end{align}\]</span></p><h2 id="计算不定积分int_fracx1x2dx">4. 计算不定积分<span class="math inline">\(\int_{}^{}\frac{x}{1+x^2}dx\)</span></h2><p><span class="math display">\[\begin{align} 因为\frac{d(1+x^2)}{dx} = 2x\newline 所以dx = \frac{d(1+x^2)}{2x}\newline 所以\int_{}^{}\frac{x}{1+x^2}dx =\frac{1}{2}\int_{}^{}\frac{d(1+x^2)}{1+x^2}\newline = \frac{1}{2}ln(1+x^2) + C\end{align}\]</span></p><h2 id="计算不定积分int_eexxdx">5. 计算不定积分<span class="math inline">\(\int_{}^{}e^{e^x+x}dx\)</span></h2><p><span class="math display">\[\begin{align} 换元法：\newline \int_{}^{}e^{e^x+x}dx = \int_{}^{}e^{e^x}·e^xdx\newline 因为\frac{de^x}{dx} = e^x\newline 所以e^xdx = de^x\newline 所以\int_{}^{}e^{e^x}·e^xdx = \int_{}^{}e^{e^x}de^x\newline 令t = e^x, 则原式 =\newline \int_{}^{}e^tdt = e^t + C\newline 即e^{e^x} + C\end{align}\]</span></p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>高等数学</tag>
-      
-      <tag>微积分</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>高数每日练习2.12</title>
-    <link href="/posts/4/"/>
-    <url>/posts/4/</url>
-    
-    <content type="html"><![CDATA[<h1 id="高数每日练习2.12">高数每日练习2.12</h1><h2 id="计算定积分int_1e2frac1xsqrt1lnxdx">1. 计算定积分<span class="math inline">\(\int_{1}^{e^2}\frac{1}{x\sqrt{1+lnx}}dx\)</span></h2><p><span class="math display">\[\begin{align} 因为\frac{d(1 + lnx)}{dx} = \frac{1}{x},\newline 所以\frac{dx}{x} = \frac{d(1 + lnx)}{dx},\newline 所以\int_{}^{}\frac{1}{x\sqrt{1 + lnx}}dx,\newline = \int_{}^{}\frac{1}{\sqrt{1 + lnx}}d( 1+ lnx),\newline 因为\int_{}^{}\frac{1}{\sqrt{x}}dx = 2\sqrt{x} + C,\newline 所以\int_{}^{}\frac{1}{\sqrt{1 + lnx}}d(1 + lnx)\newline = 2\sqrt{1+lnx}+C,\newline 所以\int_{1}^{e^2}\frac{1}{x\sqrt{1 + lnx}}dx\newline = 2×\sqrt{3}-2×1\newline = 2(\sqrt{3}-1).\end{align}\]</span></p><h2 id="计算导数fracdarcsinxdx">2.计算导数<span class="math inline">\(\frac{d(arcsinx)}{dx}\)</span></h2><p><span class="math display">\[\begin{align} 因为y = arcsinx, 所以x = siny,\newline 对两边关于x求导：\newline 1 = \frac{siny}{dx}\newline 1 = cosy\frac{dy}{dx}\newline \frac{dy}{dx} = \frac{1}{cosy}\newline 因为siny = x, siny^2 + cosy^2 = 1,\newline 所以cosy = ±\sqrt{1-x^2}\newline 所以\frac{dy}{dx} = ±\frac{1}{\sqrt{1-x^2}}\newline 因为y = arcsinx图像中斜率总为正，\newline 所以\frac{d(arcsinx)}{dx} = \frac{1}{\sqrt{1-x^2}}\end{align}\]</span></p><h2 id="计算不定积分int_fracxsqrt1-x2dx">3.计算不定积分<span class="math inline">\(\int_{}^{}\frac{x}{\sqrt{1-x^2}}dx\)</span></h2><p><span class="math display">\[\begin{align} 因为\frac{d(1-x^2)}{dx} = -2x,\newline 所以dx = \frac{d(1-x^2)}{-2x}\newline 所以\int_{}^{}\frac{x}{\sqrt{1-x^2}}dx\newline = \int_{}^{}\frac{x}{\sqrt{1-x^2}}\frac{d(1-x^2)}{-2x}\newline = \int_{}^{}-\frac{1}{2}\frac{d(1-x^2)}{\sqrt{1-x^2}}\newline = -\frac{1}{2} \int_{}^{}\frac{d(1-x^2)}{\sqrt{1-x^2}}\newline = -\frac{1}{2} × 2\sqrt{1 - x^2} + C\newline = -\sqrt{1-x^2} + C.\end{align}\]</span></p><h2 id="计算不定积分int_arcsinxdx">4.计算不定积分<span class="math inline">\(\int_{}{}arcsin(x)dx\)</span></h2><p><span class="math display">\[\begin{align} 分部积分法：\newline 令u = arcsin(x), dv = dx\newline 则v = x        , du = \frac{dx}{\sqrt{1-x^2}}\newline 所以\int_{}^{}arcsin(x)dx = xarcsin(x) -\int_{}^{}\frac{x}{\sqrt{1-x^2}}dx\newline = xarcsin(x) - (-\sqrt{1-x^2}+C)\newline = xarcsin(x) + \sqrt{1-x^2} + C\end{align}\]</span></p><h2 id="计算定积分int_-fracpi2fracpi21x3sin4xdx">5.计算定积分<span class="math inline">\(\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}(1+x^3)sin^4(x)dx\)</span></h2><p><span class="math display">\[\begin{align} \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}(1+x^3)sin^4(x)dx =\newline \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}sin^4(x)dx +\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}x^3sin^4(x)dx\newline 因x^3sin^4(x)为奇函数，所以\newline \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}x^3sin^4(x)dx = 0\newline 所以原式 = \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}sin^4(x)dx\newline = 2\int_{0}^{\frac{\pi}{2}}sin^4(x)dx\newline 由Wallis公式得：\newline \int_{0}^{\frac{\pi}{2}}sin^4(x)dx = \frac{3\pi}{16}\newline 所以原式 = \frac{3\pi}{8}.\end{align}\]</span></p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>高等数学</tag>
-      
-      <tag>微积分</tag>
+      <tag>Java</tag>
       
     </tags>
     
@@ -199,9 +115,9 @@
     
     <tags>
       
-      <tag>Java</tag>
-      
       <tag>MinecraftForge</tag>
+      
+      <tag>Java</tag>
       
     </tags>
     
